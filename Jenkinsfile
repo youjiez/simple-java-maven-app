@@ -13,7 +13,7 @@ pipeline {
 
             // Run Maven on a Unix agent.
             
-            sh "export MAVEN_HOME=/root/Devops/apache-maven-3.6.2/"
+            sh "export MAVEN_HOME=/root/Devops/apache-maven-3.6.2"
             sh "export JAVA_HOME=/usr/java/jdk1.8.0_231-i586/"
             sh "export PATH=$MAVEN_HOME/bin:$PATH"            
             sh "mvn -Dmaven.test.failure.ignore=true clean package"
